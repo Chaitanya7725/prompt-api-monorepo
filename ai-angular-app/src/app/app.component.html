@@ -1,0 +1,30 @@
+<div style="padding: 20px; font-family: sans-serif; max-width: 500px;">
+  <h2>Angular API Prompt Client</h2>
+  <form (ngSubmit)="onSubmit()">
+    <textarea
+      style="width: 100%; height: 80px; margin-bottom: 10px;"
+      [(ngModel)]="prompt"
+      name="prompt"
+      placeholder="Enter your prompt here..."
+      required>
+    </textarea>
+    <div>
+      <button type="submit" [disabled]="loading">
+        {{ loading ? 'Sending...' : 'Submit Prompt' }}
+      </button>
+
+      <!-- New Clear Button -->
+      <button 
+        type="button" 
+        (click)="onClear()" 
+        style="margin-left: 10px; background: #ccc; border: 1px solid #999; cursor: pointer;">
+        Clear Window
+      </button>
+    </div>
+  </form>
+
+  <div style="margin-top: 20px; padding: 15px; background: #f0f0f0; border-radius: 4px;">
+    <h3>Response Window:</h3>
+    <p style="white-space: pre-wrap;">{{ response || 'No response yet.' }}</p>
+  </div>
+</div>

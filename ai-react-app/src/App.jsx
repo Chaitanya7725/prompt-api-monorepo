@@ -10,7 +10,7 @@ function App() {
     setLoading(true);
     try {
       const safePrompt = encodeURIComponent(prompt);
-      const res = await fetch(`http://localhost:8080/api/ollama/${safePrompt}`, {
+      const res = await fetch(`http://localhost:8080/api/ollama/react/${safePrompt}`, {
         method: 'GET',
       });
       const textData = await res.text();
