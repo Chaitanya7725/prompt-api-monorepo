@@ -1,4 +1,4 @@
-package com.example.chaitanya.springai;
+package com.chaitanya.agenticsdlc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

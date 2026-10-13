@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: springai
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: llama3.2:latest
+          temperature: 0.2
+  datasource:
+    url: jdbc:postgresql://localhost:5433/agentic_sdlc
+    username: agentic_user
+    password: agentic_password
+
+  jpa:
+    # Local-development JPA settings
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8081
+
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor: DEBUG
+    root: INFO

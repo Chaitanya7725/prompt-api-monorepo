@@ -1,9 +1,9 @@
-package com.example.chaitanya.springai;
+package com.chaitanya.agenticsdlc;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+@SpringBootTest(classes = SpringaiApplication.class)
 class SpringaiApplicationTests {
 
 	@Test

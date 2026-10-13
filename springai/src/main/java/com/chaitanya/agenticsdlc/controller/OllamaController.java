@@ -1,4 +1,4 @@
-package com.example.chaitanya.springai;
+package com.chaitanya.agenticsdlc.controller;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.memory.ChatMemory;
